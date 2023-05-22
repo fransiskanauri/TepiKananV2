@@ -5,6 +5,7 @@
 <head>
     <title>TEPI KANAN COFFEE</title>
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <!--Body-->
 
@@ -12,9 +13,10 @@
     <!--Head Title-->
     <div class="bg-slate-800 h-screen mx-auto bg-fixed bg-blend-overlay pt-10"
         style="background-image: url(/asset/background-specialcoffee.png);">
-
-        <p class="pt-48 font-bold text-center text-3xl text-white">TEPI KANAN COFFEE</p>
-        <p class="text-center text-white">Coffee and workplace</p>
+        <div class="mt-60">
+            <p class="font-bold text-center text-3xl text-white">TEPI KANAN COFFEE</p>
+            <p class="text-center text-white">Coffee and workplace</p>
+        </div>
     </div>
     <!--End of Head Title-->
 
@@ -120,42 +122,103 @@
     <!--End of Our Menu-->
 
     <!--Special Coffee-->
-    
-    <hr class="my-20">
 
-    <div class="container mx-auto my-5 border rounded-lg shadow-lg">
-        <div class="px-5 py-5">
-            
-            <p> Tepi Kanan Coffee is a place where people can gather to enjoy freshly brewed coffee, tea,
-                and other beverages in a relaxed and comfortable atmosphere. </p>
-            <br>
-            <p> We offer a variety of options including espresso, cappuccino, lattes, and cold brews, as
-                well as pastries, sandwiches, and other light snacks. </p>
-            <br>
-            <p class=""> A popular meeting place for friends, coworkers, and individuals looking for a cozy
-                environment to work or read.
-                With our welcoming atmosphere and wide range of menu options, Tepi Kanan Coffee have become
-                an integral part of many communities, providing a convenient and enjoyable space to relax
-                and socialize.</p>    
+    <script src="/public/java.js"></script>
+    <!--Tabs navigation-->
+    <ul class="mb-5 flex list-none flex-row flex-wrap border-b-0 pl-0" role="tablist" data-te-nav-ref>
+        <li role="presentation">
+            <a href="#tabs-home"
+                class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+                data-te-toggle="pill" data-te-target="#tabs-home" data-te-nav-active role="tab"
+                aria-controls="tabs-home" aria-selected="true">Home</a>
+        </li>
+        <li role="presentation">
+            <a href="#tabs-profile"
+                class="focus:border-transparen my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+                data-te-toggle="pill" data-te-target="#tabs-profile" role="tab" aria-controls="tabs-profile"
+                aria-selected="false">Profile</a>
+        </li>
+        <li role="presentation">
+            <a href="#tabs-messages"
+                class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+                data-te-toggle="pill" data-te-target="#tabs-messages" role="tab" aria-controls="tabs-messages"
+                aria-selected="false">Messages</a>
+        </li>
+        <li role="presentation">
+            <a href="#tabs-contact"
+                class="disabled pointer-events-none my-2 block border-x-0 border-b-2 border-t-0 border-transparent bg-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-400 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent dark:text-neutral-600"
+                data-te-toggle="pill" data-te-target="#tabs-contact" role="tab" aria-controls="tabs-contact"
+                aria-selected="false">Contact</a>
+        </li>
+    </ul>
+
+    <!--Tabs content-->
+    <div class="mb-6">
+        <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+            id="tabs-home" role="tabpanel" aria-labelledby="tabs-home-tab" data-te-tab-active>
+            Tab 1 content
         </div>
-        
+        <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+            id="tabs-profile" role="tabpanel" aria-labelledby="tabs-profile-tab">
+            Tab 2 content
+        </div>
+        <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+            id="tabs-messages" role="tabpanel" aria-labelledby="tabs-profile-tab">
+            Tab 3 content
+        </div>
+        <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+            id="tabs-contact" role="tabpanel" aria-labelledby="tabs-contact-tab">
+            Tab 4 content
+        </div>
     </div>
 
+    <!--Page Footer-->
+    <div class="bg-black text-white pb-20 mx-auto">
+        <div class="container bg-black text-white mx-auto">
+            <div class="pt-10 pb-5">
+                <img src="/asset/Icon.png" width="200" class="m-auto pt-2">
+                <h3 class="text-center text-2xl mb-3 font-bold">TEPI KANAN COFFEE</h3>
+            </div>
 
-    <hr class="my-20">
-
-    <div class="container bg-slate-500 rounded mx-auto columns-5 text-center">
-        <div>Yang Special</div>
-        <div>Yang Enak</div>
-        <div>Yang Kenyang</div>
-        <div>Yang Asyik</div>
-        <div>Yang Ekstra</div>
-        
+            <div class="py-10 md:grid md:inline-grid md:grid-cols-2 xl:grid-cols-3 max-w-5xl">
+                <div class=" py-4 px-5 mx-2 mt-5">
+                    <h4 class="text-xl font-sans font-semibold">ABOUT US</h4>
+                    <p class="text-lg">Find Us on Our Social Media</p>
+                </div>
+                <div class=" py-4 px-5 mx-2 mt-5">
+                    <h4 class="text-xl font-sans font-semibold">CONTACT US</h4>
+                    <p class="text-lg">Gg. Bina Satwa No.9A, Tanah Sareal, Kec. Tanah Sereal, Kota Bogor, Jawa Barat
+                        16161
+                    </p>
+                </div>
+                <div class=" py-4 px-5 mx-2 mt-5">
+                    <h4 class="text-xl font-sans font-semibold">OPENING HOURS</h4>
+                    <p class="text-lg">Sunday - Wednesday and Friday</p>
+                    <span>09:00 AM - 9:00 PM</span>
+                    <br>
+                    <br>
+                    <p class="text-lg">Saturday</p>
+                    <span>09:00 AM - 11:00 PM</span>
+                    <br>
+                    <br>
+                    <p class="text-lg">Thursday</p>
+                    <span>Closed</span>
+                </div>
+            </div>
+            <!--End of Content Footer-->
+        </div>
+        <!--End of Container Page Footer-->
     </div>
+    <!--End of Page Footer-->
 
-    <hr class="my-20">
+
+
+    <!--Footer-->
+    <footer class="bg-amber-950 py-7 text-white text-center  border-dashed border-t-2 border-t-white ">
+        Copyright © 2023 Tepi Kanan Coffee. All rights reserved.
+    </footer>
+    <!--End of Footer-->
 </body>
-<!--Footer-->
-<footer></footer>
+
 
 </html>
