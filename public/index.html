@@ -11,59 +11,123 @@
 
 <body>
     <!--Head Title-->
-    <div class="bg-slate-800 h-screen mx-auto bg-fixed bg-blend-overlay pt-10"
+    <div class="bg-stone-600 h-screen mx-auto bg-fixed bg-cover bg-blend-overlay "
         style="background-image: url(/asset/background-specialcoffee.png);">
+        <!--Navbar-->
+        <div class="container flex justify-between m-auto px-5 py-5">
+            <img src="/asset/Logo.png">
+            <div class="text-center grid grid-cols-3 sticky ">
+                <div class="text-white text-lg hover:text-2xl hover:font-bold py-5 uppercase"><a href="#About">About
+                        Us</a>
+                </div>
+                <div class="text-white text-lg hover:text-2xl hover:font-bold py-5 uppercase"><a href="#Menu">Menu</a>
+                </div>
+                <div class="text-white text-lg hover:text-2xl hover:font-bold py-5 uppercase"><a href="#ContactUs">Contact Us</a></div>
+            </div>
+        </div>
+        <!--End of Navbar-->
         <div class="mt-60">
-            <p class="font-bold text-center text-3xl text-white">TEPI KANAN COFFEE</p>
-            <p class="text-center text-white">Coffee and workplace</p>
+            <p class="font-bold text-center text-5xl lg:text-8xl text-white">TEPI KANAN COFFEE</p>
+            <p class="text-center text-white text-lg lg:text-3xl">Coffee and workplace</p>
         </div>
     </div>
     <!--End of Head Title-->
 
-    <!--Navbar-->
-    <div class="p-3 w-full bg-neutral-700 text-center grid grid-cols-3">
-        <div class="bg-slate-400 hover:bg-slate-800 py-5">About Us</div>
-        <div class="bg-slate-400 hover:bg-slate-800 py-5">Menu</div>
-        <div class="bg-slate-400 hover:bg-slate-800 py-5">Contact Us</div>
-    </div>
-    <!--End of Navbar-->
-
     <!--About Us-->
-    <div class="bg-slate-400 m-3 p-8 min-h-screen">
+    <div id="About" class="bg-slate-200 p-8">
         <!--Text About Us-->
-        <div class="p-3 max-w-5xl m-auto">
-            <p> Tepi Kanan Coffee is a place where people can gather to enjoy freshly brewed coffee, tea,
-                and other beverages in a relaxed and comfortable atmosphere. </p>
-            <br>
-            <p> We offer a variety of options including espresso, cappuccino, lattes, and cold brews, as
-                well as pastries, sandwiches, and other light snacks. </p>
-            <br>
-            <p class=""> A popular meeting place for friends, coworkers, and individuals looking for a cozy
-                environment to work or read.
-                With our welcoming atmosphere and wide range of menu options, Tepi Kanan Coffee have become
-                an integral part of many communities, providing a convenient and enjoyable space to relax
-                and socialize.</p>
+        <div class="container mx-auto grid lg:grid-cols-2 py-10 ">
+            <div class="p-3 px-5 max-w-5xl m-auto">
+                <h2 class="text-5xl pb-5 font-bold uppercase">About Us</h2>
+                <h2 class="text-3xl pb-5 font-bold uppercase">#Brewedwithlove</h2>
+                <p class="text-lg"> Tepi Kanan Coffee is a place where people can gather to enjoy freshly brewed coffee,
+                    tea,
+                    and other beverages in a relaxed and comfortable atmosphere.
+                    <br><br>
+                    We offer a variety of options including espresso, cappuccino, lattes, and cold brews, as
+                    well as pastries, sandwiches, and other light snacks.
+                    <br><br>
+                    A popular meeting place for friends, coworkers, and individuals looking for a cozy
+                    environment to work or read.
+                    With our welcoming atmosphere and wide range of menu options, Tepi Kanan Coffee have become
+                    an integral part of many communities, providing a convenient and enjoyable space to relax
+                    and socialize.
+                </p>
+            </div>
+            <!--End of Text About Us-->
+
+            <!--Image About Us-->
+            <div class="m-4 text-center max-w-5xl m-auto py-5">
+                <img src="/asset/servecustomer.png" class="inline-block rounded-full border-8 border-white ">
+                <img src="/asset/coffeebean.png" class="inline-block rounded-full border-8 border-white">
+            </div>
+            <!--End Of Image About Us-->
         </div>
 
-        <!--Image About Us-->
-        <div class="m-4 text-center max-w-5xl m-auto py-5">
-            <img src="/asset/servecustomer.png" class="inline-block rounded-full">
-            <img src="/asset/coffeebean.png" class="inline-block rounded-full">
-        </div>
     </div>
     <!--End of About Us-->
 
-    <hr class="my-5">
-
     <!--Special Coffee-->
+    <div class="bg-amber-950 py-10 bg-blend-overlay bg-fixed bg-cover bg-no-repeat"
+        style="background-image: url(/asset/CoffeeJar.jpeg);">
+        <!--Special Coffee - Container-->
+        <div class="container mx-auto py-5">
+            <!--Container - Header-->
+            <div class="py-5 mt-10 px-3">
+                <h1 class="text-5xl font-bold text-center pb-5 uppercase text-white">Special Coffee</h1>
+                <p class="text-xl text-center text-white">Our Favorite Coffee that will make you enjoy your time
+                    with the aroma</p>
+            </div>
+            <!--End of Container - Header-->
+
+            <!--Container - Gallery-->
+            <div class="py-10 mt-1 mb-10 grid lg:grid-cols-3 md:min-w-full">
+                <!--Gallery - Special 1-->
+                <div class="text-center my-2 mx-2 relative">
+                    <img src="/asset/menu-special-thumbnail-01.png" class="border-8 m-auto">
+                    <div
+                        class=" absolute border-2 border-amber-100 hover:bg-amber-600 hover:bg-opacity-10 bottom-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-lg">
+                        <strong class="text-xl uppercase text-white">Kopi Kanan</strong>
+                        <p class="text-white">Perfectly Balanced Coffee, Milk and Sweetness</p>
+                    </div>
+                </div>
+                <!--End of Gallery - Special 1-->
+
+                <!--Gallery - Special 2-->
+                <div class="text-center my-2 mx-2 relative">
+                    <img src="/asset/menu-special-thumbnail-02.png" class="border-8 m-auto">
+                    <div
+                        class="absolute border-2 border-amber-100 hover:bg-amber-600 hover:bg-opacity-10 bottom-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-lg">
+                        <strong class="text-xl uppercase text-white">Kopi Kanan</strong>
+                        <p class="text-white">Perfectly Balanced Coffee, Milk and Sweetness</p>
+                    </div>
+                </div>
+                <!--End of Gallery - Special 2-->
+
+                <!--Gallery - Special 3-->
+                <div class="text-center my-2 mx-2 relative">
+                    <img src="/asset/menu-special-thumbnail-03.png" class="border-8 m-auto">
+                    <div
+                        class="absolute border-2 border-amber-100 hover:bg-amber-600 hover:bg-opacity-10 bottom-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-lg">
+                        <strong class="text-xl uppercase text-white">Kopi Kanan</strong>
+                        <p class="text-white">Perfectly Balanced Coffee, Milk and Sweetness</p>
+                    </div>
+                </div>
+                <!--End of Gallery - Special 3-->
+            </div>
+            <!--End of Container - Header-->
+        </div>
+        <!--End of Special Coffee - Container-->
+    </div>
+    <!--End of Special Coffee-->
 
     <!--Our Menu-->
     <!--Our Menu - Content-->
-    <div class="container mx-auto py-10">
+    <div id="Menu" class="container mx-auto py-20">
         <!--Content - Title -->
-        <div class="py-3 font-sans px-8 pt-10">
-            <h1 class="text-5xl font-bold text-center pb-5">Our Menu</h1>
-            <p class="pb-10 text-center">There are many variations of coffee that we serve. Perfectly balaced, soft or
+        <div class="py-3 font-sans px-8 pt-20 pb-5">
+            <h1 class="text-5xl font-bold text-center pb-5 uppercase">Our Menu</h1>
+            <p class="pb-10 text-center text-lg">There are many variations of coffee that we serve. Perfectly balaced, soft or
                 stong and the purist. You can choose your type. We also serve food to accompany your coffee time. Here
                 we show the menu.</p>
         </div>
@@ -72,65 +136,77 @@
         <!--Content - All Menu -->
         <div class="bg-slate-100 pb-5 mb-20">
             <!--All Menu - Menu Group -->
-            <div class="bg-slate-100 py-1 border-b-2 border-slate-300 grid grid-cols-5 text-center overflow-x-auto">
+            <div class="bg-slate-100 py-3 border-b-2 border-slate-300 grid grid-cols-5 text-center overflow-x-auto">
                 <!--Menu Group - Yang Spesial -->
                 <div class="bg-slate-100 py-5 hover:bg-slate-200">
-                    <h3 class="text-sm md:underline-offset-8 md:text-xl md:font-bold md:underline uppercase px-5">
-                        Yang Spesial
-                    </h3>
-                    <p><img src="/asset/coffee-cup.png" width="80" height="80" class="mx-auto pt-5 md:w-24 lg:w-32"></p>
+                    <a href="#Special">
+                        <h3 class="text-sm md:underline-offset-8 md:text-xl md:font-bold md:underline uppercase px-5">
+                            Yang Spesial
+                        </h3>
+                        <p><img src="/asset/coffee-cup.png" width="80" height="80" class="mx-auto pt-5 md:w-24 lg:w-32">
+                        </p>
+                    </a>
                 </div>
                 <!--End of Menu Group - Yang Enak -->
 
                 <!--Menu Group - Yang Enak -->
                 <div class="bg-slate-100 py-5 hover:bg-slate-200">
-                    <h3 class="text-sm md:underline-offset-8 md:text-xl md:font-bold md:underline uppercase px-5">
-                        Yang Enak
-                    </h3>
-                    <p><img src="/asset/coffee.png" width="80" height="80" class="mx-auto pt-5 md:w-24 lg:w-32"></p>
+                    <a href="#Enak">
+                        <h3 class="text-sm md:underline-offset-8 md:text-xl md:font-bold md:underline uppercase px-5">
+                            Yang Enak
+                        </h3>
+                        <p><img src="/asset/coffee.png" width="80" height="80" class="mx-auto pt-5 md:w-24 lg:w-32"></p>
+                    </a>
                 </div>
                 <!--End of Menu Group - Yang Enak -->
 
                 <!--Menu Group - Yang Kenyang -->
                 <div class="bg-slate-100 py-5 hover:bg-slate-200">
-                    <h3 class="text-sm md:underline-offset-8 md:text-xl md:font-bold md:underline uppercase px-5">
-                        Yang Kenyang
-                    </h3>
-                    <p><img src="/asset/food.png" width="80" height="80" class="mx-auto pt-5 md:w-24 lg:w-32"></p>
+                    <a href="#Kenyang">
+                        <h3 class="text-sm md:underline-offset-8 md:text-xl md:font-bold md:underline uppercase px-5">
+                            Yang Kenyang
+                        </h3>
+                        <p><img src="/asset/food.png" width="80" height="80" class="mx-auto pt-5 md:w-24 lg:w-32"></p>
+                    </a>
                 </div>
                 <!--End of Menu Group - Yang Kenyang -->
 
                 <!--Menu Group - Yang Asik -->
                 <div class="bg-slate-100 py-5 hover:bg-slate-200">
-                    <h3 class="text-sm md:underline-offset-8 md:text-xl md:font-bold md:underline uppercase px-5">
-                        Yang Asik
-                    </h3>
-                    <p><img src="/asset/desert.png" width="80" height="80" class="mx-auto pt-5 md:w-24 lg:w-32"></p>
+                    <a href="#Asik">
+                        <h3 class="text-sm md:underline-offset-8 md:text-xl md:font-bold md:underline uppercase px-5">
+                            Yang Asik
+                        </h3>
+                        <p><img src="/asset/desert.png" width="80" height="80" class="mx-auto pt-5 md:w-24 lg:w-32"></p>
+                    </a>
                 </div>
                 <!--End of Menu Group - Yang Asik -->
 
                 <!--Menu Group - Yang Ekstra -->
                 <div class="bg-slate-100 py-5 hover:bg-slate-200">
-                    <h3 class="text-sm md:underline-offset-8 md:text-xl md:font-bold md:underline uppercase px-5">
-                        Yang Ekstra
-                    </h3>
-                    <p><img src="/asset/drinks.png" width="80" height="80" class="mx-auto pt-5 md:w-24 lg:w-32"></p>
+                    <a href="#Ekstra">
+                        <h3 class="text-sm md:underline-offset-8 md:text-xl md:font-bold md:underline uppercase px-5">
+                            Yang Ekstra
+                        </h3>
+                        <p><img src="/asset/drinks.png" width="80" height="80" class="mx-auto pt-5 md:w-24 lg:w-32"></p>
+                    </a>
                 </div>
                 <!--End of Menu Group - Yang Ekstra -->
             </div>
             <!--End of All Menu - Menu Group -->
 
             <!--All Menu - Menu Details -->
-            <div class="m-5">
-                <h2 class="py-5 text-center text-xl md:text-2xl font-bold uppercase">Yang spesial</h2>
+            <div class="m-5 py-5">
+                <h2 id="Special" class="py-5 text-center text-xl md:text-2xl font-bold uppercase">Yang spesial</h2>
                 <!--Menu Details -->
-                <div class="bg-slate-200 py-4 m-2 grid md:grid-cols-2">
+                <div class="bg-slate-200 py-14 m-2 grid md:grid-cols-2">
                     <!--Item Menu - Kopi Kanan -->
                     <div class="py-4 flex flex-row mx-3">
-                        <img src="/asset/menu-item-thumbnail-001.png" class="w-20 h-20 rounded-full border-slate-100 border-solid border-4 m-auto">
+                        <img src="/asset/menu-item-thumbnail-001.png"
+                            class="w-20 h-20 rounded-full border-slate-100 border-solid border-4 m-auto">
                         <div class="basis-2/3 p-5">
                             <strong class="text-xl uppercase">Kopi Kanan</strong>
-                            <p>Perfectly Balanced Coffee, Milk and Sweetness</p>
+                            <p class="text-lg">Perfectly Balanced Coffee, Milk and Sweetness</p>
                         </div>
                         <p
                             class="bg-white p-5 justify-center rounded-full text-2xl font-bold h-20 w-20 text-center border-slate-500 border-solid border-2 m-auto">
@@ -140,10 +216,11 @@
 
                     <!--Item Menu - Pink Panther -->
                     <div class="py-4 flex flex-row mx-3 mb-2">
-                        <img src="/asset/menu-item-thumbnail-002.png" class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
+                        <img src="/asset/menu-item-thumbnail-002.png"
+                            class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
                         <div class="basis-2/3 p-5">
                             <strong class="text-xl uppercase">pink panther</strong>
-                            <p>Who Loves Soft, Sweet and Sourness of Berries</p>
+                            <p class="text-lg">Who Loves Soft, Sweet and Sourness of Berries</p>
                         </div>
                         <p
                             class="bg-white p-5 justify-center rounded-full text-2xl font-bold h-20 w-20 text-center border-slate-500 border-solid border-2 m-auto">
@@ -153,10 +230,11 @@
 
                     <!--Item Menu - Manual Brew-->
                     <div class="py-4 flex flex-row mx-3 mb-2">
-                        <img src="/asset/menu-item-thumbnail-003.png" class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
+                        <img src="/asset/menu-item-thumbnail-003.png"
+                            class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
                         <div class="basis-2/3 p-5">
                             <strong class="text-xl uppercase">MANUAL BREW</strong>
-                            <p>The Purist. Tubruk / Filter / Vietnamese Style</p>
+                            <p class="text-lg">The Purist. Tubruk / Filter / Vietnamese Style</p>
                         </div>
                         <p
                             class="bg-white p-5 justify-center rounded-full text-2xl font-bold h-20 w-20 text-center border-slate-500 border-solid border-2 m-auto">
@@ -166,15 +244,16 @@
                 </div>
                 <!--End of Menu Details -->
 
-                <h2 class="py-5 text-center text-xl md:text-2xl font-bold uppercase">Yang Enak</h2>
+                <h2 id="Enak" class="py-5 text-center text-xl md:text-2xl font-bold uppercase">Yang Enak</h2>
                 <!--Menu Details - Yang Enak -->
-                <div class="bg-slate-200 py-4 m-2 grid md:grid-cols-2">
+                <div class="bg-slate-200 py-14 m-2 grid md:grid-cols-2">
                     <!--Item Menu - Kopi Kanan -->
                     <div class="py-4 flex flex-row mx-3">
-                        <img src="/asset/menu-item-thumbnail-01.png" class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
+                        <img src="/asset/menu-item-thumbnail-01.png"
+                            class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
                         <div class="basis-2/3 p-5">
                             <strong class="text-xl uppercase">AMERIKANO</strong>
-                            <p>Most Favorite Coffee</p>
+                            <p class="text-lg">Most Favorite Coffee</p>
                         </div>
                         <p
                             class="bg-white p-5 justify-center rounded-full text-2xl font-bold h-20 w-20 text-center border-slate-500 border-solid border-2 m-auto">
@@ -184,10 +263,11 @@
 
                     <!--Item Menu -->
                     <div class="py-4 flex flex-row mx-3 mb-2">
-                        <img src="/asset/menu-item-thumbnail-02.png" class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
+                        <img src="/asset/menu-item-thumbnail-02.png"
+                            class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
                         <div class="basis-2/3 p-5">
                             <strong class="text-xl uppercase">KAPUCINO</strong>
-                            <p>Classic Espresso and Milk</p>
+                            <p class="text-lg">Classic Espresso and Milk</p>
                         </div>
                         <p
                             class="bg-white p-5 justify-center rounded-full text-2xl font-bold h-20 w-20 text-center border-slate-500 border-solid border-2 m-auto">
@@ -197,10 +277,11 @@
 
                     <!--Item Menu -->
                     <div class="py-4 flex flex-row mx-3 mb-2">
-                        <img src="/asset/menu-item-thumbnail-03.png" class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
+                        <img src="/asset/menu-item-thumbnail-03.png"
+                            class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
                         <div class="basis-2/3 p-5">
                             <strong class="text-xl uppercase">MADCHA</strong>
-                            <p>Precious Matcha Latte</p>
+                            <p class="text-lg">Precious Matcha Latte</p>
                         </div>
                         <p
                             class="bg-white p-5 justify-center rounded-full text-2xl font-bold h-20 w-20 text-center border-slate-500 border-solid border-2 m-auto">
@@ -210,10 +291,11 @@
 
                     <!--Item Menu -->
                     <div class="py-4 flex flex-row mx-3 mb-2">
-                        <img src="/asset/menu-item-thumbnail-04.png" class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
+                        <img src="/asset/menu-item-thumbnail-04.png"
+                            class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
                         <div class="basis-2/3 p-5">
                             <strong class="text-xl uppercase">MILCOKO</strong>
-                            <p>Lovely Chocolate Milk</p>
+                            <p class="text-lg">Lovely Chocolate Milk</p>
                         </div>
                         <p
                             class="bg-white p-5 justify-center rounded-full text-2xl font-bold h-20 w-20 text-center border-slate-500 border-solid border-2 m-auto">
@@ -223,10 +305,11 @@
 
                     <!--Item Menu -->
                     <div class="py-4 flex flex-row mx-3 mb-2">
-                        <img src="/asset/menu-item-thumbnail-05.png" class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
+                        <img src="/asset/menu-item-thumbnail-05.png"
+                            class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
                         <div class="basis-2/3 p-5">
                             <strong class="text-xl uppercase">TIRAMISYU</strong>
-                            <p>Her Favorite :(</p>
+                            <p class="text-lg">Her Favorite :(</p>
                         </div>
                         <p
                             class="bg-white p-5 justify-center rounded-full text-2xl font-bold h-20 w-20 text-center border-slate-500 border-solid border-2 m-auto">
@@ -236,10 +319,11 @@
 
                     <!--Item Menu -->
                     <div class="py-4 flex flex-row mx-3 mb-2">
-                        <img src="/asset/menu-item-thumbnail-06.png" class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
+                        <img src="/asset/menu-item-thumbnail-06.png"
+                            class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
                         <div class="basis-2/3 p-5">
                             <strong class="text-xl uppercase">LECITI</strong>
-                            <p>Sweet Lychee Tea</p>
+                            <p class="text-lg">Sweet Lychee Tea</p>
                         </div>
                         <p
                             class="bg-white p-5 justify-center rounded-full text-2xl font-bold h-20 w-20 text-center border-slate-500 border-solid border-2 m-auto">
@@ -249,10 +333,11 @@
 
                     <!--Item Menu -->
                     <div class="py-4 flex flex-row mx-3 mb-2">
-                        <img src="/asset/menu-item-thumbnail-07.png" class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
+                        <img src="/asset/menu-item-thumbnail-07.png"
+                            class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
                         <div class="basis-2/3 p-5">
                             <strong class="text-xl uppercase">LEMONTI</strong>
-                            <p>Fresh Lemon Tea</p>
+                            <p class="text-lg">Fresh Lemon Tea</p>
                         </div>
                         <p
                             class="bg-white p-5 justify-center rounded-full text-2xl font-bold h-20 w-20 text-center border-slate-500 border-solid border-2 m-auto">
@@ -263,15 +348,16 @@
                 </div>
                 <!--End of Menu Details -->
 
-                <h2 class="py-5 text-center text-xl md:text-2xl font-bold uppercase">Yang Kenyang</h2>
+                <h2 id="Kenyang" class="py-5 text-center text-xl md:text-2xl font-bold uppercase">Yang Kenyang</h2>
                 <!--Menu Details -->
-                <div class="bg-slate-200 py-4 m-2 grid md:grid-cols-2">
+                <div class="bg-slate-200 py-14 m-2 grid md:grid-cols-2">
                     <!--Item Menu - BEEF TERIYAKI -->
                     <div class="py-4 flex flex-row mx-3">
-                        <img src="/asset/beefteriyaki.png" class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
+                        <img src="/asset/beefteriyaki.png"
+                            class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
                         <div class="basis-2/3 p-5">
                             <strong class="text-xl uppercase">BEEF TERIYAKI</strong>
-                            <p>Beef Teriyaki with Rice.</p>
+                            <p class="text-lg">Beef Teriyaki with Rice.</p>
                         </div>
                         <p
                             class="bg-white p-5 justify-center rounded-full text-2xl font-bold h-20 w-20 text-center border-slate-500 border-solid border-2 m-auto">
@@ -281,10 +367,11 @@
 
                     <!--Item Menu - CHICKEN TERIYAKI-->
                     <div class="py-4 flex flex-row mx-3 mb-2">
-                        <img src="/asset/chickenteriyaki.png" class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
+                        <img src="/asset/chickenteriyaki.png"
+                            class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
                         <div class="basis-2/3 p-5">
                             <strong class="text-xl uppercase">CHICKEN TERIYAKI</strong>
-                            <p>Chicken Teriyaki with Rice.</p>
+                            <p class="text-lg">Chicken Teriyaki with Rice.</p>
                         </div>
                         <p
                             class="bg-white p-5 justify-center rounded-full text-2xl font-bold h-20 w-20 text-center border-slate-500 border-solid border-2 m-auto">
@@ -294,10 +381,11 @@
 
                     <!--Item Menu - YAM GEPREK-->
                     <div class="py-4 flex flex-row mx-3 mb-2">
-                        <img src="/asset/ayamgeprek.png" class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
+                        <img src="/asset/ayamgeprek.png"
+                            class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
                         <div class="basis-2/3 p-5">
                             <strong class="text-xl uppercase">YAM GEPREK</strong>
-                            <p>Smashed Chicken with Rice.</p>
+                            <p class="text-lg">Smashed Chicken with Rice.</p>
                         </div>
                         <p
                             class="bg-white p-5 justify-center rounded-full text-2xl font-bold h-20 w-20 text-center border-slate-500 border-solid border-2 m-auto">
@@ -307,49 +395,11 @@
 
                     <!--Item Menu - MEE TELOR-->
                     <div class="py-4 flex flex-row mx-3 mb-2">
-                        <img src="/asset/mietelor.png" class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
+                        <img src="/asset/mietelor.png"
+                            class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
                         <div class="basis-2/3 p-5">
                             <strong class="text-xl uppercase">MEE TELOR</strong>
-                            <p>Most Loved Noodle with Egg.</p>
-                        </div>
-                        <p
-                            class="bg-white p-5 justify-center rounded-full text-2xl font-bold h-20 w-20 text-center border-slate-500 border-solid border-2 m-auto">
-                            25</p>
-                    </div>
-                    <!--End of Item Menu -->
-
-                    <!--Item Menu - CIRENK ROEDJAK-->
-                    <div class="py-4 flex flex-row mx-3 mb-2">
-                        <img src="/asset/cirengrujak.png" class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
-                        <div class="basis-2/3 p-5">
-                            <strong class="text-xl uppercase">CIRENK ROEDJAK</strong>
-                            <p>Cirenk with Sambal Rujak.</p>
-                        </div>
-                        <p
-                            class="bg-white p-5 justify-center rounded-full text-2xl font-bold h-20 w-20 text-center border-slate-500 border-solid border-2 m-auto">
-                            25</p>
-                    </div>
-                    <!--End of Item Menu -->
-
-                    <!--Item Menu - CIKEN WINGS-->
-                    <div class="py-4 flex flex-row mx-3 mb-2">
-                        <img src="/asset/chickenwings.png" class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
-                        <div class="basis-2/3 p-5">
-                            <strong class="text-xl uppercase">CIKEN WINGS</strong>
-                            <p>Wings Platter.</p>
-                        </div>
-                        <p
-                            class="bg-white p-5 justify-center rounded-full text-2xl font-bold h-20 w-20 text-center border-slate-500 border-solid border-2 m-auto">
-                            25</p>
-                    </div>
-                    <!--End of Item Menu -->
-
-                    <!--Item Menu - PREN PRAIS-->
-                    <div class="py-4 flex flex-row mx-3 mb-2">
-                        <img src="/asset/frenchfries.png" class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
-                        <div class="basis-2/3 p-5">
-                            <strong class="text-xl uppercase">PREN PRAIS</strong>
-                            <p>Favorite French Fries.</p>
+                            <p class="text-lg">Most Loved Noodle with Egg.</p>
                         </div>
                         <p
                             class="bg-white p-5 justify-center rounded-full text-2xl font-bold h-20 w-20 text-center border-slate-500 border-solid border-2 m-auto">
@@ -359,19 +409,122 @@
 
                 </div>
                 <!--End of Menu Details -->
-                
+
+                <h2 id="Asik" class="py-5 text-center text-xl md:text-2xl font-bold uppercase">Yang Asik</h2>
+                <!--Menu Details - Yang Asik -->
+                <div class="bg-slate-200 py-14 m-2 grid md:grid-cols-2">
+                    <!--Item Menu - CIRENK ROEDJAK-->
+                    <div class="py-4 flex flex-row mx-3 mb-2">
+                        <img src="/asset/cirengrujak.png"
+                            class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
+                        <div class="basis-2/3 p-5">
+                            <strong class="text-xl uppercase">CIRENK ROEDJAK</strong>
+                            <p class="text-lg">Cirenk with Sambal Rujak.</p>
+                        </div>
+                        <p
+                            class="bg-white p-5 justify-center rounded-full text-2xl font-bold h-20 w-20 text-center border-slate-500 border-solid border-2 m-auto">
+                            25</p>
+                    </div>
+                    <!--End of Item Menu -->
+
+                    <!--Item Menu - CIKEN WINGS-->
+                    <div class="py-4 flex flex-row mx-3 mb-2">
+                        <img src="/asset/chickenwings.png"
+                            class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
+                        <div class="basis-2/3 p-5">
+                            <strong class="text-xl uppercase">CIKEN WINGS</strong>
+                            <p class="text-lg">Wings Platter.</p>
+                        </div>
+                        <p
+                            class="bg-white p-5 justify-center rounded-full text-2xl font-bold h-20 w-20 text-center border-slate-500 border-solid border-2 m-auto">
+                            25</p>
+                    </div>
+                    <!--End of Item Menu -->
+
+                    <!--Item Menu - PREN PRAIS-->
+                    <div class="py-4 flex flex-row mx-3 mb-2">
+                        <img src="/asset/frenchfries.png"
+                            class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
+                        <div class="basis-2/3 p-5">
+                            <strong class="text-xl uppercase">PREN PRAIS</strong>
+                            <p class="text-lg">Favorite French Fries.</p>
+                        </div>
+                        <p
+                            class="bg-white p-5 justify-center rounded-full text-2xl font-bold h-20 w-20 text-center border-slate-500 border-solid border-2 m-auto">
+                            25</p>
+                    </div>
+                    <!--End of Item Menu -->
+                </div>
+                <!--End of Menu Details -->
+
+                <h2 class="py-5 text-center text-xl md:text-2xl font-bold uppercase">Yang Ekstra</h2>
+                <!--Menu Details - Yang Ekstra -->
+                <div id="Ekstra" class="bg-slate-200 py-4 m-2 grid md:grid-cols-2">
+                    <!--Item Menu - ESPRESSO SHOT-->
+                    <div class="py-4 flex flex-row mx-3 mb-2">
+                        <img src="/asset/cirengrujak.png"
+                            class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
+                        <div class="basis-2/3 p-5">
+                            <strong class="text-xl uppercase">ESPRESSO SHOT</strong>
+                        </div>
+                        <p
+                            class="bg-white p-5 justify-center rounded-full text-2xl font-bold h-20 w-20 text-center border-slate-500 border-solid border-2 m-auto">
+                            10</p>
+                    </div>
+                    <!--End of Item Menu - ESPRESSO SHOT-->
+
+                    <!--Item Menu - CIKEN WINGS-->
+                    <div class="py-4 flex flex-row mx-3 mb-2">
+                        <img src="/asset/chickenwings.png"
+                            class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
+                        <div class="basis-2/3 p-5">
+                            <strong class="text-xl uppercase">EKSTRA SYRUP</strong>
+                        </div>
+                        <p
+                            class="bg-white p-5 justify-center rounded-full text-2xl font-bold h-20 w-20 text-center border-slate-500 border-solid border-2 m-auto">
+                            10</p>
+                    </div>
+                    <!--End of Item Menu - EKSTRA SYRUP-->
+
+                    <!--Item Menu - OAT MILK-->
+                    <div class="py-4 flex flex-row mx-3 mb-2">
+                        <img src="/asset/frenchfries.png"
+                            class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
+                        <div class="basis-2/3 p-5">
+                            <strong class="text-xl uppercase">OAT MILK</strong>
+                        </div>
+                        <p
+                            class="bg-white p-5 justify-center rounded-full text-2xl font-bold h-20 w-20 text-center border-slate-500 border-solid border-2 m-auto">
+                            10</p>
+                    </div>
+                    <!--End of Item Menu - OAT MILK-->
+
+                    <!--Item Menu - MINERAL WATER-->
+                    <div class="py-4 flex flex-row mx-3 mb-2">
+                        <img src="/asset/frenchfries.png"
+                            class="w-20 h-20 rounded-full border-white border-solid border-4 m-auto">
+                        <div class="basis-2/3 p-5">
+                            <strong class="text-xl uppercase">MINERAL WATER</strong>
+                        </div>
+                        <p
+                            class="bg-white p-5 justify-center rounded-full text-2xl font-bold h-20 w-20 text-center border-slate-500 border-solid border-2 m-auto">
+                            5</p>
+                    </div>
+                    <!--End of Item Menu - MINERAL WATER-->
+                </div>
+                <!--End of Menu Details - Yang Ekstra -->
             </div>
             <!--End of All Menu - Menu Details -->
         </div>
         <!--End of Content - All Menu -->
-    </div> 
+    </div>
     <!--End of Our Menu-->
 
     <!--Page Footer-->
-    <div class="bg-black text-white pb-20 mx-auto">
-        <div class="container bg-black text-white mx-auto">
-            <div class="pt-10 pb-5">
-                <img src="/asset/Icon.png" width="200" class="m-auto pt-2">
+    <div id="ContactUs" class="bg-black text-white pb-20 mx-auto">
+        <div class="container bg-black text-white mx-auto py-20">
+            <div class="pt-15 pb-5">
+                <img src="/asset/Icon.png" width="200" class="m-auto pt-2 animate-bounce">
                 <h3 class="text-center text-2xl mb-3 font-bold">TEPI KANAN COFFEE</h3>
             </div>
 
