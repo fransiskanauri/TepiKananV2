@@ -16,7 +16,7 @@
     <div class="bg-stone-600 top-0  h-screen mx-auto bg-fixed bg-cover bg-blend-overlay "
         style="background-image: url(/asset/background-specialcoffee.png);">
 
-        <div class="pt-60">
+        <div class="pt-80">
             <p class="font-bold text-center text-5xl lg:text-8xl text-white">TEPI KANAN COFFEE</p>
             <p class="text-center text-white text-lg lg:text-3xl">Coffee and workplace</p>
         </div>
@@ -24,18 +24,18 @@
     <!--End of Head Title-->
 
     <!--Navbar-->
-    <div class="hover:bg-amber-950 hover:bg-opacity-60 fixed top-0 w-full" style="z-index: 999;">
+    <div class="bg-slate-50 bg-opacity-60 fixed top-0 w-full" style="z-index: 999;">
         <div class="container  mx-auto py-2 flex justify-between md:max-w-5xl">
             <img src="/asset/Logo.png" class="pl-7 cursor-pointer hover:animate-bounce">
             <ul class="grid grid-cols-3 mr-5 invisible md:visible">
                 <li
-                    class="text-center text-white text-lg font-semibold hover:font-bold hover:text-2xl hover:underline md:hover:underline-offset-4 font-semibold bg-slate-100 md:bg-transparent md:text-white md:text-xl duration-500 w-32 my-auto mx-1 py-2">
+                    class="text-center text-slate-950 text-lg font-semibold hover:font-bold hover:text-2xl hover:underline md:hover:underline-offset-4 font-semibold bg-slate-100 md:bg-transparent md:text-xl duration-500 md:w-32 w-5 my-auto mx-1 py-2">
                     <a href="#About">About Us</a></li>
                 <li
-                    class="text-center text-white text-lg font-semibold hover:font-bold hover:text-2xl hover:underline md:hover:underline-offset-4 font-semibold bg-slate-100 md:bg-transparent md:text-white md:text-xl duration-500 w-32 my-auto mx-1 py-2">
+                    class="text-center text-slate-950 text-lg font-semibold hover:font-bold hover:text-2xl hover:underline md:hover:underline-offset-4 font-semibold bg-slate-100 md:bg-transparent md:text-xl duration-500 md:w-32 w-5 my-auto mx-1 py-2">
                     <a href="#Menu">Menu</a></li>
                 <li
-                    class="text-center text-white text-lg font-semibold hover:font-bold hover:text-2xl hover:underline md:hover:underline-offset-4 font-semibold bg-slate-100 md:bg-transparent md:text-white md:text-xl duration-500 w-32 my-auto mx-1 py-2">
+                    class="text-center text-slate-950 text-lg font-semibold hover:font-bold hover:text-2xl hover:underline md:hover:underline-offset-4 font-semibold bg-slate-100 md:bg-transparent md:text-xl duration-500 md:w-32 w-5 my-auto mx-1 py-2">
                     <a href="#ContactUs">Contact Us</a></li>
             </ul>
             <div class="my-auto md:hidden">
@@ -48,11 +48,11 @@
 
         <div id="list" class="container mx-auto md:hidden hidden">
             <ul class="bg-opacity-50 md:hidden">
-                <li class="hover:bg-amber-950 hover:bg-opacity-70 text-white text-lg font-semibold py-2 pl-7 "><a
+                <li class="hover:bg-slate-200 hover:bg-opacity-70 text-slate-950 text-lg font-semibold py-2 pl-7 "><a
                         href="#About">About Us</a></li>
-                <li class="hover:bg-amber-950 hover:bg-opacity-70 text-white text-lg font-semibold py-2 pl-7 "><a
+                <li class="hover:bg-slate-200 hover:bg-opacity-70 text-slate-950 text-lg font-semibold py-2 pl-7 "><a
                         href="#Menu">Menu</a></li>
-                <li class="hover:bg-amber-950 hover:bg-opacity-70 text-white text-lg font-semibold py-2 pl-7 "><a
+                <li class="hover:bg-slate-200 hover:bg-opacity-70 text-slate-950 text-lg font-semibold py-2 pl-7 "><a
                         href="#ContactUs">Contact Us</a></li>
             </ul>
         </div>
@@ -167,31 +167,31 @@
             <!--All Menu - Menu Group -->
             <div class="border-b-2 border-slate-300">
                 <ul class="grid grid-cols-5">
-                    <li class="hover:bg-slate-200 cursor-pointer py-5" onclick="setTimeout(special, 200);">
+                    <li id="listspecial" class="hover:bg-slate-200 cursor-pointer py-5" onclick="setTimeout(special, 200);">
                         <h3
                             class="font-semibold text-center sm:text-lg lg:text-2xl lg:font-bold lg:underline lg:uppercase py-2 hidden sm:block">
                             Yang Special</h3>
                         <img src="/asset/coffee-cup.png" alt="CoffeeCup" class="px-3">
                     </li>
-                    <li class="hover:bg-slate-200 cursor-pointer py-5" onclick="setTimeout(enak, 200)">
+                    <li id="listenak" class="hover:bg-slate-200 cursor-pointer py-5" onclick="setTimeout(enak, 200)">
                         <h3
                             class="font-semibold text-center sm:text-lg lg:text-2xl lg:font-bold lg:underline lg:uppercase py-2 hidden sm:block">
                             Yang Enak</h3>
                         <img src="/asset/coffee.png" alt="CoffeeCup" class="px-3">
                     </li>
-                    <li class="hover:bg-slate-200 cursor-pointer py-5" onclick="setTimeout(kenyang, 200)">
+                    <li id="listkenyang" class="hover:bg-slate-200 cursor-pointer py-5" onclick="setTimeout(kenyang, 200)">
                         <h3
                             class="font-semibold text-center sm:text-lg lg:text-2xl lg:font-bold lg:underline lg:uppercase py-2 hidden sm:block">
                             Yang Kenyang</h3>
                         <img src="/asset/food.png" alt="CoffeeCup" class="px-3">
                     </li>
-                    <li class="hover:bg-slate-200 cursor-pointer py-5" onclick="setTimeout(asik, 200)">
+                    <li id="listasik" class="hover:bg-slate-200 cursor-pointer py-5" onclick="setTimeout(asik, 200)">
                         <h3
                             class="font-semibold text-center sm:text-lg lg:text-2xl lg:font-bold lg:underline lg:uppercase py-2 hidden sm:block">
                             Yang Asik</h3>
                         <img src="/asset/desert.png" alt="CoffeeCup" class="px-3">
                     </li>
-                    <li class="hover:bg-slate-200 cursor-pointer py-5" onclick="setTimeout(ekstra, 200)">
+                    <li id="listekstra" class="hover:bg-slate-200 cursor-pointer py-5" onclick="setTimeout(ekstra, 200)">
                         <h3
                             class="font-semibold text-center sm:text-lg lg:text-2xl lg:font-bold lg:underline lg:uppercase py-2 hidden sm:block">
                             Yang Ekstra</h3>
@@ -301,7 +301,7 @@
                 <!--End of Menu Details -->
 
                 <!--Menu Details - Yang Enak -->
-                <div id="yangenak" class="bg-slate-200 py-14 m-2 grid md:grid-cols-2">
+                <div id="yangenak" class="bg-slate-200 py-14 m-2 grid md:grid-cols-2 hidden">
                     <!--Item Menu - Kopi Kanan -->
                     <div class="py-4 flex flex-row mx-3">
                         <img src="/asset/menu-item-thumbnail-01.png"
@@ -404,7 +404,7 @@
                 <!--End of Menu Details -->
 
                 <!--Menu Details - Yang Kenyang-->
-                <div id="yangkenyang" class="bg-slate-200 py-14 m-2 grid md:grid-cols-2">
+                <div id="yangkenyang" class="bg-slate-200 py-14 m-2 grid md:grid-cols-2 hidden">
                     <!--Item Menu - BEEF TERIYAKI -->
                     <div class="py-4 flex flex-row mx-3">
                         <img src="/asset/beefteriyaki.png"
@@ -465,7 +465,7 @@
                 <!--End of Menu Details -->
 
                 <!--Menu Details - Yang Asik -->
-                <div id="yangasik" class="bg-slate-200 py-14 m-2 grid md:grid-cols-2">
+                <div id="yangasik" class="bg-slate-200 py-14 m-2 grid md:grid-cols-2 hidden">
                     <!--Item Menu - CIRENK ROEDJAK-->
                     <div class="py-4 flex flex-row mx-3 mb-2">
                         <img src="/asset/cirengrujak.png"
@@ -511,7 +511,7 @@
                 <!--End of Menu Details -->
 
                 <!--Menu Details - Yang Ekstra -->
-                <div id="yangekstra" class="bg-slate-200 py-4 m-2 grid md:grid-cols-2">
+                <div id="yangekstra" class="bg-slate-200 py-4 m-2 grid md:grid-cols-2 hidden">
                     <!--Item Menu - ESPRESSO SHOT-->
                     <div class="py-4 flex flex-row mx-3 mb-2">
                         <img src="/asset/cirengrujak.png"
@@ -614,7 +614,7 @@
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.566581870708!2d106.79723767580916!3d-6.576253093417156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c580b6b6212b%3A0xbea7b567ed271337!2sTepi%20Kanan%20Coffee!5e0!3m2!1sen!2sid!4v1684987693270!5m2!1sen!2sid"
                         width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade" class="lg:py-5"></iframe>
+                        referrerpolicy="no-referrer-when-downgrade" class="lg:py-5 m-auto"></iframe>
                 </div>
                 <!--End of Maps-->
             </div>
