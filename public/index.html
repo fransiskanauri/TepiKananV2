@@ -30,13 +30,16 @@
             <ul class="grid grid-cols-3 mr-5 invisible md:visible">
                 <li
                     class="text-center text-slate-950 text-lg font-semibold hover:font-bold hover:text-2xl hover:underline md:hover:underline-offset-4 font-semibold bg-slate-100 md:bg-transparent md:text-xl duration-500 md:w-32 w-5 my-auto mx-1 py-2">
-                    <a href="#About">About Us</a></li>
+                    <a href="#About">About Us</a>
+                </li>
                 <li
                     class="text-center text-slate-950 text-lg font-semibold hover:font-bold hover:text-2xl hover:underline md:hover:underline-offset-4 font-semibold bg-slate-100 md:bg-transparent md:text-xl duration-500 md:w-32 w-5 my-auto mx-1 py-2">
-                    <a href="#Menu">Menu</a></li>
+                    <a href="#Menu">Menu</a>
+                </li>
                 <li
                     class="text-center text-slate-950 text-lg font-semibold hover:font-bold hover:text-2xl hover:underline md:hover:underline-offset-4 font-semibold bg-slate-100 md:bg-transparent md:text-xl duration-500 md:w-32 w-5 my-auto mx-1 py-2">
-                    <a href="#ContactUs">Contact Us</a></li>
+                    <a href="#ContactUs">Contact Us</a>
+                </li>
             </ul>
             <div class="my-auto md:hidden">
                 <img id="iconMenu" onclick="openMenu()" src="/asset/menu-button-of-three-horizontal-lines.png"
@@ -146,6 +149,53 @@
     </div>
     <!--End of Special Coffee-->
 
+    <hr class="my-5">
+    <!--Special Coffee-->
+    <div class="slider-container container bg-slate-100 whitespace-nowrap py-10 max-w-5xl min-h-screen mx-auto cursor-pointer ">
+        <!--Special Coffee - Carousel-->
+        <div class="inner-slider bg-slate-200 py-10 flex whitespace-nowrap text-center justify-center object-cover">
+            <img src="/asset/menu-special-thumbnail-01.png" class="h-80 ml-0 object-cover border-2 border-white" alt="img">
+            <img src="/asset/menu-special-thumbnail-02.png" class="h-80 ml-5 object-cover border-2 border-white" alt="img">
+            <img src="/asset/menu-special-thumbnail-03.png" class="h-80 ml-5 object-cover border-2 border-white" alt="img">
+            <img src="/asset/menu-special-thumbnail-01.png" class="h-80 ml-5 object-cover border-2 border-white" alt="img">
+            <img src="/asset/menu-special-thumbnail-02.png" class="h-80 ml-5 object-cover border-2 border-white" alt="img">
+            <img src="/asset/menu-special-thumbnail-03.png" class="h-80 ml-5 object-cover border-2 border-white" alt="img">
+        </div>
+        <div class="container bg-slate-400 mx-auto text-center my-2 flex justify-center">
+            <div class="hover:bg-amber-950 w-5 h-5 rounded-full border-4 border-white mx-2"></div>
+            <div class="hover:bg-amber-950 w-5 h-5 rounded-full border-4 border-white mx-2"></div>
+        </div>
+    </div>
+    
+    <script>
+        let sliderContainer = document.querySelector('.slider-container');
+        let innerSlider = document.querySelector('.inner-slider');
+        let pressed = false;
+        let startX;
+        let x;
+
+        sliderContainer.addEventListener("mousedown", (e) => {
+            pressed = true;
+            startX = e.offsetX - innerSlider.offsetLeft;
+            sliderContainer.style.cursor = "grabbing";
+        });
+    </script>
+
+    
+    <hr class="my-5">
+
+    <div class="bg-slate-100 py-5">
+        <div class="container flex bg-slate-200 mx-auto py-5 overflow-hidden scroll-m-3">
+            <img src="/asset/menu-special-thumbnail-01.png" alt="img" class="h-72">
+            <img src="/asset/menu-special-thumbnail-02.png" alt="img" class="h-72">
+            <img src="/asset/menu-special-thumbnail-03.png" alt="img" class="h-72">
+            <img src="/asset/menu-special-thumbnail-01.png" alt="img" class="h-72">
+            <img src="/asset/menu-special-thumbnail-02.png" alt="img" class="h-72">
+            <img src="/asset/menu-special-thumbnail-03.png" alt="img" class="h-72">
+        </div>
+    </div>
+
+    <hr class="my-5">
     <!--Our Menu-->
     <!--Our Menu - Content-->
     <div id="Menu" class="container mx-auto py-20 lg:max-w-5xl">
@@ -167,7 +217,8 @@
             <!--All Menu - Menu Group -->
             <div class="border-b-2 border-slate-300">
                 <ul class="grid grid-cols-5">
-                    <li id="listspecial" class="hover:bg-slate-200 cursor-pointer py-5" onclick="setTimeout(special, 200);">
+                    <li id="listspecial" class="hover:bg-slate-200 cursor-pointer py-5"
+                        onclick="setTimeout(special, 200);">
                         <h3
                             class="font-semibold text-center sm:text-lg lg:text-2xl lg:font-bold lg:underline lg:uppercase py-2 hidden sm:block">
                             Yang Special</h3>
@@ -179,7 +230,8 @@
                             Yang Enak</h3>
                         <img src="/asset/coffee.png" alt="CoffeeCup" class="px-3">
                     </li>
-                    <li id="listkenyang" class="hover:bg-slate-200 cursor-pointer py-5" onclick="setTimeout(kenyang, 200)">
+                    <li id="listkenyang" class="hover:bg-slate-200 cursor-pointer py-5"
+                        onclick="setTimeout(kenyang, 200)">
                         <h3
                             class="font-semibold text-center sm:text-lg lg:text-2xl lg:font-bold lg:underline lg:uppercase py-2 hidden sm:block">
                             Yang Kenyang</h3>
@@ -191,7 +243,8 @@
                             Yang Asik</h3>
                         <img src="/asset/desert.png" alt="CoffeeCup" class="px-3">
                     </li>
-                    <li id="listekstra" class="hover:bg-slate-200 cursor-pointer py-5" onclick="setTimeout(ekstra, 200)">
+                    <li id="listekstra" class="hover:bg-slate-200 cursor-pointer py-5"
+                        onclick="setTimeout(ekstra, 200)">
                         <h3
                             class="font-semibold text-center sm:text-lg lg:text-2xl lg:font-bold lg:underline lg:uppercase py-2 hidden sm:block">
                             Yang Ekstra</h3>
@@ -207,7 +260,7 @@
                     document.getElementById('iconMenu').style.display = "none";
                     document.getElementById('list').style.display = "block";
                 }
-        
+
                 function closeMenu() {
                     document.getElementById('iconClose').style.display = "none";
                     document.getElementById('iconMenu').style.display = "block";
@@ -215,35 +268,35 @@
                 }
 
                 //------------Menu----------//
-                function special(){
+                function special() {
                     document.getElementById('yangspecial').style.display = "block";
                     document.getElementById('yangenak').style.display = "none";
                     document.getElementById('yangkenyang').style.display = "none";
                     document.getElementById('yangasik').style.display = "none";
                     document.getElementById('yangekstra').style.display = "none";
                 }
-                function enak(){
+                function enak() {
                     document.getElementById('yangspecial').style.display = "none";
                     document.getElementById('yangenak').style.display = "block";
                     document.getElementById('yangkenyang').style.display = "none";
                     document.getElementById('yangasik').style.display = "none";
                     document.getElementById('yangekstra').style.display = "none";
                 }
-                function kenyang(){
+                function kenyang() {
                     document.getElementById('yangspecial').style.display = "none";
                     document.getElementById('yangenak').style.display = "none";
                     document.getElementById('yangkenyang').style.display = "block";
                     document.getElementById('yangasik').style.display = "none";
                     document.getElementById('yangekstra').style.display = "none";
                 }
-                function asik(){
+                function asik() {
                     document.getElementById('yangspecial').style.display = "none";
                     document.getElementById('yangenak').style.display = "none";
                     document.getElementById('yangkenyang').style.display = "none";
                     document.getElementById('yangasik').style.display = "block";
                     document.getElementById('yangekstra').style.display = "none";
                 }
-                function ekstra(){
+                function ekstra() {
                     document.getElementById('yangspecial').style.display = "none";
                     document.getElementById('yangenak').style.display = "none";
                     document.getElementById('yangkenyang').style.display = "none";
