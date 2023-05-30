@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEPI KANAN COFFEE</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="/public/java.js"></script>
 
 </head>
 <!--Body-->
@@ -151,50 +152,84 @@
 
     <hr class="my-5">
     <!--Special Coffee-->
-    <div class="slider-container container bg-slate-100 whitespace-nowrap py-10 max-w-5xl min-h-screen mx-auto cursor-pointer ">
-        <!--Special Coffee - Carousel-->
-        <div class="inner-slider bg-slate-200 py-10 flex whitespace-nowrap text-center justify-center object-cover">
-            <img src="/asset/menu-special-thumbnail-01.png" class="h-80 ml-0 object-cover border-2 border-white" alt="img">
-            <img src="/asset/menu-special-thumbnail-02.png" class="h-80 ml-5 object-cover border-2 border-white" alt="img">
-            <img src="/asset/menu-special-thumbnail-03.png" class="h-80 ml-5 object-cover border-2 border-white" alt="img">
-            <img src="/asset/menu-special-thumbnail-01.png" class="h-80 ml-5 object-cover border-2 border-white" alt="img">
-            <img src="/asset/menu-special-thumbnail-02.png" class="h-80 ml-5 object-cover border-2 border-white" alt="img">
-            <img src="/asset/menu-special-thumbnail-03.png" class="h-80 ml-5 object-cover border-2 border-white" alt="img">
-        </div>
-        <div class="container bg-slate-400 mx-auto text-center my-2 flex justify-center">
-            <div class="hover:bg-amber-950 w-5 h-5 rounded-full border-4 border-white mx-2"></div>
-            <div class="hover:bg-amber-950 w-5 h-5 rounded-full border-4 border-white mx-2"></div>
+
+
+    <div class="carousel relative mx-auto bg-slate-200 max-w-5xl">
+        <div class="carousel__track overflow-hidden">
+            <div class="carousel__slides flex transition-transform duration-300 md:h-74">
+                <div class="carousel__slide w-full mx-2">
+                    <img src="/asset/menu-special-thumbnail-01.png" alt="Slide 1" class="">
+                </div>
+                <div class="carousel__slide w-full mx-2">
+                    <img src="/asset/menu-special-thumbnail-02.png" alt="Slide 2" class="">
+                </div>
+                <div class="carousel__slide w-full mx-2">
+                    <img src="/asset/menu-special-thumbnail-03.png" alt="Slide 3" class="">
+                </div>
+                <div class="carousel__slide w-full mx-2">
+                    <img src="/asset/menu-special-thumbnail-01.png" alt="Slide 4" class="">
+                </div>
+                <div class="carousel__slide w-full mx-2">
+                    <img src="/asset/menu-special-thumbnail-02.png" alt="Slide 5" class="">
+                </div>
+                <div class="carousel__slide w-full mx-2">
+                    <img src="/asset/menu-special-thumbnail-03.png" alt="Slide 6" class="">
+                </div>
+            </div>
         </div>
     </div>
-    
-    <script>
-        let sliderContainer = document.querySelector('.slider-container');
-        let innerSlider = document.querySelector('.inner-slider');
-        let pressed = false;
-        let startX;
-        let x;
+    <div class="container mx-auto text-center my-2 flex justify-center">
+        <div class="hover:bg-amber-950 w-5 h-5 rounded-full border-4 border-black mx-2"></div>
+        <div class="hover:bg-amber-950 w-5 h-5 rounded-full border-4 border-black mx-2"></div>
+    </div>
 
-        sliderContainer.addEventListener("mousedown", (e) => {
-            pressed = true;
-            startX = e.offsetX - innerSlider.offsetLeft;
-            sliderContainer.style.cursor = "grabbing";
+
+    <script>
+        const carouselTrack = document.querySelector('.carousel__slides');
+        const slides = Array.from(carouselTrack.children);
+        let slideWidth = slides[0].getBoundingClientRect().width;
+
+        // Set the width of the slides dynamically based on their container
+        slides.forEach((slide) => {
+            slide.style.width = slideWidth + 'px';
         });
+
+        // Move the carousel track by translating the X position
+        const moveCarousel = (amount) => {
+            carouselTrack.style.transform = `translateX(${amount}px)`;
+        };
+
+        // Slides to show on each slide movement
+        const slidesToShow = 1;
+
+        let currentPosition = 0;
+
+        // Move to the next slide
+        const nextSlide = () => {
+            const slideWidth = slides[currentPosition].getBoundingClientRect().width;
+            currentPosition += slidesToShow;
+
+            if (currentPosition + slidesToShow > slides.length) {
+                currentPosition = 0;
+            }
+
+            moveCarousel(-currentPosition * slideWidth);
+        };
+
+        // Auto-slide functionality
+        setInterval(nextSlide, 2000); // Adjust the duration (in milliseconds) as per your preference
+
     </script>
 
-    
     <hr class="my-5">
 
-    <div class="bg-slate-100 py-5">
-        <div class="container flex bg-slate-200 mx-auto py-5 overflow-hidden scroll-m-3">
-            <img src="/asset/menu-special-thumbnail-01.png" alt="img" class="h-72">
-            <img src="/asset/menu-special-thumbnail-02.png" alt="img" class="h-72">
-            <img src="/asset/menu-special-thumbnail-03.png" alt="img" class="h-72">
-            <img src="/asset/menu-special-thumbnail-01.png" alt="img" class="h-72">
-            <img src="/asset/menu-special-thumbnail-02.png" alt="img" class="h-72">
-            <img src="/asset/menu-special-thumbnail-03.png" alt="img" class="h-72">
+    <div class="bg-slate-100">
+        <div class="container mx-auto bg-slate-500 py-10">
+            <img src="/asset/menu-special-thumbnail-01.png" class="m-2 mx-auto w-28">
+            <img src="/asset/menu-special-thumbnail-02.png" class="m-2 mx-auto w-52">
         </div>
     </div>
-
+    
     <hr class="my-5">
     <!--Our Menu-->
     <!--Our Menu - Content-->
