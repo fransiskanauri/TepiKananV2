@@ -164,83 +164,72 @@
     <hr class="my-5">
     <!--Special Coffee-->
 
-
-    <div class="carousel relative mx-auto bg-slate-200 max-w-5xl">
-        <div class="carousel__track overflow-hidden">
-            <div class="carousel__slides flex transition-transform duration-300 md:h-74">
-                <div class="carousel__slide w-full mx-2">
-                    <img src="/asset/menu-special-thumbnail-01.png" alt="Slide 1" class="">
-                </div>
-                <div class="carousel__slide w-full mx-2">
-                    <img src="/asset/menu-special-thumbnail-02.png" alt="Slide 2" class="">
-                </div>
-                <div class="carousel__slide w-full mx-2">
-                    <img src="/asset/menu-special-thumbnail-03.png" alt="Slide 3" class="">
-                </div>
-                <div class="carousel__slide w-full mx-2">
-                    <img src="/asset/menu-special-thumbnail-01.png" alt="Slide 4" class="">
-                </div>
-                <div class="carousel__slide w-full mx-2">
-                    <img src="/asset/menu-special-thumbnail-02.png" alt="Slide 5" class="">
-                </div>
-                <div class="carousel__slide w-full mx-2">
-                    <img src="/asset/menu-special-thumbnail-03.png" alt="Slide 6" class="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container mx-auto text-center my-2 flex justify-center">
-        <div class="hover:bg-amber-950 w-5 h-5 rounded-full border-4 border-black mx-2"></div>
-        <div class="hover:bg-amber-950 w-5 h-5 rounded-full border-4 border-black mx-2"></div>
-    </div>
-
-
-    <script>
-        const carouselTrack = document.querySelector('.carousel__slides');
-        const slides = Array.from(carouselTrack.children);
-        let slideWidth = slides[0].getBoundingClientRect().width;
-
-        // Set the width of the slides dynamically based on their container
-        slides.forEach((slide) => {
-            slide.style.width = slideWidth + 'px';
-        });
-
-        // Move the carousel track by translating the X position
-        const moveCarousel = (amount) => {
-            carouselTrack.style.transform = `translateX(${amount}px)`;
-        };
-
-        // Slides to show on each slide movement
-        const slidesToShow = 1;
-
-        let currentPosition = 0;
-
-        // Move to the next slide
-        const nextSlide = () => {
-            const slideWidth = slides[currentPosition].getBoundingClientRect().width;
-            currentPosition += slidesToShow;
-
-            if (currentPosition + slidesToShow > slides.length) {
-                currentPosition = 0;
-            }
-
-            moveCarousel(-currentPosition * slideWidth);
-        };
-
-        // Auto-slide functionality
-        setInterval(nextSlide, 2000); // Adjust the duration (in milliseconds) as per your preference
-
-    </script>
-
     <hr class="my-5">
 
-    
-        <div class="bg-slate-100 owl-carousel owl-theme"></div>
-            <div class="container mx-auto bg-slate-500 py-10 flex ">
-                <img src="/asset/menu-special-thumbnail-01.png" class="ml-2 mx-auto h-36">
-                <img src="/asset/menu-special-thumbnail-02.png" class="ml-2 mx-auto h-36">
+    <div class="slider-wrapper relative overflow-hidden bg-slate-700 p-3">
+        <div class="relative max-w-5xl mx-auto">
+            <ul class="slides-container flex max-w-5xl mx-auto" id="slides-container">
+                <li id="special-1" class="slide bg-slate-300 m-auto p-2 relative">
+                    <img src="/asset/menu-item-thumbnail-001.png" alt="Kopi Kanan" class="w-full">
+                    <div
+                        class="bg-slate-600 w-72 absolute bottom-1 left-1/2 text-center transform -translate-x-1/2 -translate-y-1/2 mx-auto cursor-pointer">
+                        <h1 class="py-1">KOPI KANAN </h1>
+                        <hr>
+                        <p class="py-1">Perfectly Balanced Coffee, Milk and Sweetness</p>
+                    </div>
+                </li>
+                <li id="special-2" class="slide bg-slate-300 m-auto p-2 relative hidden md:block">
+                    <img src="/asset/menu-item-thumbnail-002.png" alt="Kopi Kanan" class="w-full">
+                    <div
+                        class="bg-slate-600 w-72 absolute bottom-1 left-1/2 text-center transform -translate-x-1/2 -translate-y-1/2 mx-auto cursor-pointer">
+                        <h1 class="py-1">KOPI KANAN </h1>
+                        <hr>
+                        <p class="py-1">Perfectly Balanced Coffee, Milk and Sweetness</p>
+                    </div>
+                </li>
+                <li id="special-3" class="slide bg-slate-300 m-auto p-2 relative hidden lg:block">
+                    <img src="/asset/menu-item-thumbnail-003.png" alt="Kopi Kanan" class="w-full">
+                    <div
+                        class="bg-slate-600 w-72 absolute bottom-1 left-1/2 text-center transform -translate-x-1/2 -translate-y-1/2 mx-auto cursor-pointer">
+                        <h1 class="py-1">KOPI KANAN </h1>
+                        <hr>
+                        <p class="py-1">Perfectly Balanced Coffee, Milk and Sweetness</p>
+                    </div>
+                </li>
+            </ul>
+
+            <!--For Small-->
+            <div class="container bg-slate-200 m-2 mx-auto justify-center flex md:hidden lg:hidden">
+                <div class="box hover:bg-slate-950 border-4 border-white rounded-full w-3 h-3 p-5 mx-3"></div>
+                <div class="box hover:bg-slate-950 border-4 border-white rounded-full w-3 h-3 p-5 mx-3"></div>
+            </div>
+
+            <!--For Middle-->
+            <div class="container bg-amber-300 m-2 mx-auto justify-center hidden md:block md:flex lg:hidden">
+                <div onclick="leftmedium()" class="box hover:bg-slate-950 border-4 border-white rounded-full w-3 h-3 p-5 mx-5"></div>
+                <div onclick="rightmedium()" class="box hover:bg-slate-950 border-4 border-white rounded-full w-3 h-3 p-5 mx-5"></div>
             </div>
         </div>
+    </div>
+
+    <script>
+        function leftsmall(){
+            document.getElementById('iconClose').style.display = "block";
+        }
+
+        // Medium
+        function leftmedium(){
+            document.getElementById('special-1').style.display = "block";
+            document.getElementById('special-2').style.display = "block";
+            document.getElementById('special-3').style.display = "none";
+        }
+
+        function rightmedium(){
+            document.getElementById('special-1').style.display = "none";
+            document.getElementById('special-2').style.display = "block";
+            document.getElementById('special-3').style.display = "block";
+        }
+    </script>
 
     <hr class="my-5">
     <!--Our Menu-->
