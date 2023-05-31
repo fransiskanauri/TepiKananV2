@@ -85,7 +85,6 @@
     "wrappy": "^1.0.2",
     "yaml": "^2.2.2"
   },
-  "devDependencies": {},
   "scripts": {
     "dev": "npx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --watch"
   },
