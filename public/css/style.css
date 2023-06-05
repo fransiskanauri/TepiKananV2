@@ -1195,6 +1195,10 @@ video {
   transition-delay: 300ms;
 }
 
+.delay-500 {
+  transition-delay: 500ms;
+}
+
 .duration-500 {
   transition-duration: 500ms;
 }
